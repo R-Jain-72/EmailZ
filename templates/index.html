@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EmailZ(Spam Classifier)</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Spam Classifier</h1>
+    <form method="post">
+        <textarea 
+            name="email-content" 
+            placeholder="Enter your Email" 
+            rows="15" 
+            cols="35"
+        > {{text}} </textarea> <!-- jinja tag is used here so that on clicking the button the text stays -->
+        <div>
+            <button>
+                Check Spam 
+            </button>
+            <!-- to reset -->
+            <a href="/">Reset</a>
+        </div>
+    </form>
+    <h2>Result</h2>
+    <p> {{ text }} </p> <!-- jinja tags are used -->
+</body>
+</html>
